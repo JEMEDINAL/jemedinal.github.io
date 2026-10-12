@@ -1,213 +1,110 @@
-<header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="#" class="text-lg font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
-            JEMEDINAL.dev
-        </a>
-        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-            <a href="#about" class="hover:text-brand-500 transition-colors">Perfil</a>
-            <a href="#experience" class="hover:text-brand-500 transition-colors">Experiencia</a>
-            <a href="#skills" class="hover:text-brand-500 transition-colors">Habilidades</a>
-            <a href="#education" class="hover:text-brand-500 transition-colors">Educación</a>
-            <a href="#contact" class="hover:text-brand-500 transition-colors">Contacto</a>
-        </nav>
-        <div class="flex items-center space-x-4">
-            <a href="https://github.com/JEMEDINAL" target="_blank" class="text-slate-300 hover:text-white transition-colors text-xl" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/juan-esteban-medinal" target="_blank" class="text-slate-300 hover:text-white transition-colors text-xl" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juan Esteban Medina Londoño — Desarrollador Backend Java</title>
+<style>
+  :root{--bg:#0b100e;--card:#111a16;--line:#1e2c26;--green:#22c55e;--green2:#16a34a;--txt:#e7ece9;--mut:#9fb0a8}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+  header{padding:54px 22px 40px;background:radial-gradient(1200px 400px at 50% -100px,#12241b,transparent)}
+  .header-container{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;text-align:left}
+  .profile-pic{width:130px;height:130px;border-radius:50%;object-fit:cover;border:2px solid var(--green);box-shadow:0 0 20px rgba(34,197,94,0.2)}
+  .header-info{flex:1;min-width:280px}
+  header h1{margin:0;font-size:32px;letter-spacing:.3px}
+  header .role{color:var(--green);font-weight:700;margin-top:6px;font-size:16px}
+  header .loc{color:var(--mut);font-size:14px;margin-top:4px}
+  .cta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:9px 16px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;transition:opacity 0.2s}
+  .btn:hover{opacity:0.9}
+  .btn.p{background:var(--green);color:#04140b}
+  .btn.s{border:1px solid var(--line);color:var(--txt)}
+  main{max-width:960px;margin:0 auto;padding:10px 22px 60px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:1.2px;color:var(--green);border-bottom:1px solid var(--line);padding-bottom:6px;margin-top:42px}
+  .tags span{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:5px 12px;margin:4px 6px 2px 0;font-size:13px;color:#cfe4d9}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card .st{color:var(--green);font-size:12.5px;font-weight:600;margin-bottom:8px}
+  .card p{margin:0 0 10px;color:#cdd8d2;font-size:14px}
+  .card a{color:var(--green);text-decoration:none;font-size:13px;font-weight:600}
+  footer{text-align:center;color:var(--mut);font-size:13px;padding:26px;border-top:1px solid var(--line)}
+  a{color:var(--green)}
+  @media (max-width: 600px) {
+    .header-container { text-align: center; }
+    .cta { justify-content: center; }
+  }
+</style></head>
+<body>
+<header>
+  <div class="header-container">
+    <img src="foto.jpg" alt="Juan Esteban Medina Londoño" class="profile-pic">
+    <div class="header-info">
+      <h1>Juan Esteban Medina Londoño</h1>
+      <div class="role">Desarrollador Backend Java · Spring Boot · Microservicios · AWS</div>
+      <div class="loc">Medellín, Colombia · medinalondon2004@gmail.com · +57 302 699 7238</div>
+      <div class="cta">
+        <a class="btn p" href="https://github.com/JEMEDINAL" target="_blank">GitHub</a>
+        <a class="btn s" href="https://www.linkedin.com/in/juan-esteban-medinal" target="_blank">LinkedIn</a>
+      </div>
     </div>
+  </div>
 </header>
+<main>
+  <h2>Sobre mí</h2>
+  <p>Desarrollador <b>Full Stack Java (Junior)</b> con experiencia en soluciones para <b>banca y medios</b>.
+  Trabajo con <b>Java, Spring Boot, Spring WebFlux y Angular</b>, construyo APIs REST reactivas y microservicios, y despliego en <b>AWS</b> (EC2/S3/Lambda) con Terraform y CI/CD. Busco una nueva oportunidad donde aportar y crecer.</p>
 
-<!-- Hero Section -->
-<section class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/20 via-slate-950 to-slate-950 -z-10"></div>
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="flex-1 text-center md:text-left">
-                <div class="inline-flex items-center space-x-2 bg-brand-950/60 border border-brand-800/50 rounded-full px-4 py-1 text-xs font-medium text-brand-400 mb-6">
-                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-                    AWS Certified Cloud Practitioner &bull; FullStack Developer
-                </div>
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-4">
-                    Juan Esteban <span class="bg-gradient-to-r from-brand-400 to-emerald-400 bg-clip-text text-transparent">Medina Londoño</span>
-                </h1>
-                <p class="text-lg sm:text-xl text-slate-400 mb-8 max-w-2xl">
-                    Desarrollador Full Stack Jr. especializado en el ecosistema Java, Spring Boot, programación reactiva y soluciones escalables en la nube (AWS).
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white font-medium px-6 py-3 rounded-lg shadow-lg shadow-brand-600/20 transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-paper-plane"></i> Contáctame
-                    </a>
-                    <a href="https://github.com/JEMEDINAL" target="_blank" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-medium px-6 py-3 rounded-lg transition-all flex items-center gap-2">
-                        <i class="fab fa-github"></i> Ver GitHub
-                    </a>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-gradient-to-tr from-brand-500 to-emerald-300 p-1 shadow-2xl">
-                    <div class="w-full h-full bg-slate-900 rounded-2xl flex items-center justify-center overflow-hidden">
-                        <!-- Placeholder icon or initial if photo url isn't localized -->
-                        <div class="text-7xl font-bold text-brand-400">JEM</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <h2>Tecnologías</h2>
+  <div class="tags">
+    <span>Java</span><span>Spring Boot</span><span>Spring WebFlux</span><span>APIs REST</span>
+    <span>Microservicios</span><span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span>
+    <span>AWS (EC2·S3·Lambda)</span><span>Terraform</span><span>Docker</span><span>GitHub Actions</span>
+    <span>Git/GitHub</span><span>Angular</span><span>TypeScript</span><span>HTML/CSS</span>
+  </div>
+
+  <h2>Experiencia</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>NTT Data – BBVA</h3>
+      <div class="st">Desarrollador Backend Junior · Práctica · oct-2024 – abr-2025</div>
+      <p>Java, Spring Boot, Spring WebFlux y Angular para banca. APIs REST reactivas; despliegue en AWS EC2;
+      integración con Amazon S3 y MongoDB (−30% en tiempos de carga).</p>
     </div>
-</section>
-
-<!-- About Profile Section -->
-<section id="about" class="py-20 bg-slate-900/40 border-y border-slate-800/60">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">Sobre Mí</h2>
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
-            <p class="text-slate-300 leading-relaxed text-base sm:text-lg mb-6">
-                Desarrollador Full Stack Jr. certificado como <strong class="text-white">AWS Certified Cloud Practitioner</strong>, con experiencia participando en el diseño y despliegue de soluciones para sectores de alta demanda como banca y medios. Especializado en el ecosistema Java (<strong class="text-white">Spring Boot</strong> y <strong class="text-white">Spring WebFlux</strong>), programación reactiva y microservicios con orientación a la nube.
-            </p>
-            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
-                Me caracterizo por mi capacidad de aprendizaje rápido, comunicación asertiva y adaptabilidad en equipos ágiles. Comprometido con la excelencia técnica a través de Clean Code e integración continua (CI/CD), enfocado en sumar valor desde el primer día.
-            </p>
-        </div>
+    <div class="card">
+      <h3>Telecafé</h3>
+      <div class="st">Desarrollador Full Stack Junior · Contrato · jun-2025 – dic-2025</div>
+      <p>Servicios backend Java/Spring Boot con programación reactiva; CI/CD y microservicios;
+      funciones serverless en AWS Lambda (−25% en tiempos de ejecución).</p>
     </div>
-</section>
+  </div>
 
-<!-- Experience Section -->
-<section id="experience" class="py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-12 text-center">Experiencia Laboral</h2>
-        
-        <div class="space-y-12">
-            <!-- NTTData -->
-            <div class="relative pl-8 border-l-2 border-brand-500">
-                <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-brand-500 border-4 border-slate-950"></div>
-                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-white">Desarrollador Backend</h3>
-                            <p class="text-brand-400 font-medium">NTTData - BBVA</p>
-                        </div>
-                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-300 mt-2 sm:mt-0 w-fit">Sector Bancario</span>
-                    </div>
-                    <p class="text-slate-300 text-sm mb-4">
-                        Desarrollo de aplicaciones full stack y APIs REST reactivas con Java, Spring Boot, Spring WebFlux y Angular, desplegando sobre AWS (EC2) y bases de datos NoSQL (MongoDB).
-                    </p>
-                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Logros destacados:</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
-                        <li>Implementación de integración con Amazon S3, reduciendo tiempos de carga de archivos en un 30%.</li>
-                        <li>Optimización del consumo de APIs REST en Angular usando HttpClient y formularios reactivos.</li>
-                        <li>Configuración de despliegues en AWS EC2, aumentando la disponibilidad y estabilidad del sistema.</li>
-                        <li>Mejora del rendimiento mediante programación reactiva para manejar concurrencia eficientemente.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Telecafe -->
-            <div class="relative pl-8 border-l-2 border-brand-500">
-                <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-brand-500 border-4 border-slate-950"></div>
-                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-white">Desarrollador Fullstack</h3>
-                            <p class="text-brand-400 font-medium">Telecafe</p>
-                        </div>
-                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-300 mt-2 sm:mt-0 w-fit">Sector Medios</span>
-                    </div>
-                    <p class="text-slate-300 text-sm mb-4">
-                        Desarrollo de servicios backend en Java con Spring Boot, microservicios orientados a Clean Code, pipelines CI/CD y funciones serverless.
-                    </p>
-                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Logros destacados:</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
-                        <li>Implementación de funciones serverless con AWS Lambda, reduciendo tiempos de ejecución en un 25%.</li>
-                        <li>Optimización de pipelines de CI/CD, disminuyendo errores de despliegue y acelerando entregas.</li>
-                        <li>Aumento de la calidad de código aplicando principios de Clean Code y buenas prácticas de desarrollo.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <h2>Proyectos</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Microservicios E-commerce</h3>
+      <div class="st">Java · Spring Boot · PostgreSQL · MongoDB</div>
+      <p>Arquitectura de microservicios independientes: usuarios, inventario y transacciones, con APIs REST.</p>
+      <a href="https://github.com/JEMEDINAL" target="_blank">Ver en GitHub →</a>
     </div>
-</section>
-
-<!-- Skills & Certifications Section -->
-<section id="skills" class="py-20 bg-slate-900/40 border-y border-slate-800/60">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-12 text-center">Habilidades & Certificaciones</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Stack Tecnológico -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
-                <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                    <i class="fa-solid fa-code text-brand-500"></i> Stack Tecnológico
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">Java</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">Spring Boot</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">Spring WebFlux</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">Angular</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">AWS (EC2, S3, Lambda)</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">MongoDB</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">CI/CD</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">Clean Code</span>
-                    <span class="bg-slate-800 text-slate-200 text-sm px-3 py-1.5 rounded-lg border border-slate-700">Linux (Ubuntu)</span>
-                </div>
-            </div>
-
-            <!-- Certificaciones & Educación -->
-            <div id="education" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
-                <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                    <i class="fa-solid fa-certificate text-brand-500"></i> Certificaciones & Educación
-                </h3>
-                <ul class="space-y-4 text-sm">
-                    <li class="border-b border-slate-800 pb-3">
-                        <span class="font-bold text-white block">AWS Certified Cloud Practitioner</span>
-                        <span class="text-brand-400">Amazon Web Services (AWS)</span>
-                    </li>
-                    <li class="border-b border-slate-800 pb-3">
-                        <span class="font-bold text-white block">Tecnólogo en Análisis y Desarrollo de Software</span>
-                        <span class="text-slate-400">SENA (Enero 2023 - Abril 2025)</span>
-                    </li>
-                    <li class="border-b border-slate-800 pb-3">
-                        <span class="font-bold text-white block">Computación en la Nube</span>
-                        <span class="text-slate-400">Betek</span>
-                    </li>
-                    <li>
-                        <span class="font-bold text-white block">Inteligencia Artificial Nivel Básico</span>
-                        <span class="text-slate-400">Talento Tech</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="card">
+      <h3>Sistema de Préstamos</h3>
+      <div class="st">Java/Spring Boot · Angular · TypeScript</div>
+      <p>Gestión de préstamos de punta a punta: backend con reglas de negocio + frontend que consume la API.</p>
+      <a href="https://github.com/JEMEDINAL" target="_blank">Ver en GitHub →</a>
     </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-20">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">¿Hablamos?</h2>
-        <p class="text-slate-400 mb-8">Estoy disponible para nuevas oportunidades profesionales y retos técnicos desafiantes.</p>
-        
-        <div class="flex flex-wrap justify-center gap-6">
-            <a href="mailto:medinalondon2004@gmail.com" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl transition-all flex items-center gap-3">
-                <i class="fa-solid fa-envelope text-brand-500 text-lg"></i> medinalondon2004@gmail.com
-            </a>
-            <a href="tel:3026997238" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl transition-all flex items-center gap-3">
-                <i class="fa-solid fa-phone text-brand-500 text-lg"></i> 302 699 7238
-            </a>
-        </div>
-
-        <div class="flex justify-center space-x-6 mt-8">
-            <a href="https://github.com/JEMEDINAL" target="_blank" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-brand-500 transition-all text-xl">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/juan-esteban-medinal" target="_blank" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-brand-500 transition-all text-xl">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
+    <div class="card">
+      <h3>CI/CD e Infraestructura en AWS</h3>
+      <div class="st">GitHub Actions · Terraform · AWS</div>
+      <p>Pipeline de integración/despliegue continuo e infraestructura como código en AWS.</p>
+      <a href="https://github.com/JEMEDINAL" target="_blank">Ver en GitHub →</a>
     </div>
-</section>
+  </div>
 
-<!-- Footer -->
-<footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-500">
-    <p>&copy; 2026 Juan Esteban Medina Londoño. Creado para GitHub Pages.</p>
-</footer>
+  <h2>Formación y certificaciones</h2>
+  <p><b>SENA</b> — Tecnólogo en Análisis y Desarrollo de Software (ene-2023 – abr-2025) ·
+  <b>Betek</b> — Bootcamp de AWS (2025).</p>
+  <p><b>AWS Certified Cloud Practitioner</b> — Amazon Web Services (2025) ·
+  <b>Talento Tech</b> — Inteligencia Artificial (nivel básico).</p>
+</main>
+<footer>© Juan Esteban Medina Londoño · Hecho para mi búsqueda de empleo</footer>
+</body></html>
